@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+ul {
+    padding: 0px!important;
+}
+.menu-principal {
+    width: 100%;
+}
+
+.header-1 {
+    background-color: #252323;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Adiciona algum espaçamento interno ao cabeçalho */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 200px; /* Adiciona um padding para deslocar a imagem 16px para a direita */
+}
+
+.logo img {
+    height: 100%; /* Ajusta a altura da imagem para preencher a altura do cabeçalho */
+    max-height: 115px; /* Garante que a imagem não ultrapasse a altura do cabeçalho */
+}
+
+.redes-sociais {
+    margin-left: auto; /* Empurra as redes sociais para a direita */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adiciona um espaçamento entre as imagens */
+    padding-right: 200pX; /* Adiciona espaçamento à direita */
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.redes-sociais img {
+    height: 32px; /* Ajuste a altura das imagens das redes sociais conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.4); /* Aumenta o tamanho em 30% quando o mouse passa sobre a imagem */
+}
+
+.main-content {
+    margin: 20px auto; /* Centraliza o main e adiciona um espaçamento superior/inferior */
+    width: 980px; /* Define a largura fixa de 980px */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+}
+
+.header-2 {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+
+    
+}
+.menu ul li:hover a {
+    color: red; /* Altera a cor do texto para vermelho quando o mouse passa sobre o link */
+}
+
+.menu-urls {
+    height: 80px;
+border-bottom: 3px solid #efefef;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+}
+.busca input {
+    background-image: url('../img/lupa.png');
+    background-size: 15%; /* Reduz o tamanho da imagem para 80% do espaço do elemento */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-position: center right; /* Posiciona a imagem de fundo no centro à direita */
+    background-color: transparent; /* Define o fundo como transparente para remover o quadrado branco */
+    height: 23px;
+    margin-top: 10px;
+    padding: 7px 30px 7px 10px; /* Adiciona um espaço à direita para o ícone da lupa */
+    width: 190px;
+}
+
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.col-100 {
+    width: 100%;
+    float:left ;
+    position: relative;
+}
+.quem-somos {
+    margin-top: 50px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.quem-somos h1 {
+    color: #252323; /* Cor do título */
+    font-size: 36px; /* Tamanho do título */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    font-family: cursive; /* Fonte cursiva */
+    text-align: center; /* Centraliza o título */
+    padding-right: 50px;
+}
+
+.content-wrapper {
+    display: flex; /* Usa flexbox para alinhar os elementos lado a lado */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+.quem-somos, .colaboradores {
+    margin-top: 50px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.quem-somos h1, .colaboradores h2 {
+    color: #000000; /* Cor do título */
+    font-size: 36px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-family: cursive; /* Fonte cursiva */
+    text-align: center; /* Centraliza o título */
+}
+
+.content-wrapper {
+    display: flex; /* Usa flexbox para alinhar os elementos lado a lado */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+.image-content {
+    flex: 0 0 300px; /* Define a largura fixa da imagem */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.image-content img {
+    max-width:100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 200%;
+    background-position: 0 20px;
+}
+
+.text-content {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+.quem-somos p, .colaboradores p {
+    color: #000000; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha */
+    text-align: justify; /* Justifica o texto */
+    font-family: Arial, sans-serif; /* Fonte Arial */
+}
+
+/* Classe para ajustar o tamanho da imagem */
+.imagem-ajustavel {
+    width: 300%; /* Ajuste conforme necessário */
+    max-width: 1000px; /* Exemplo de ajuste de tamanho máximo */
+}
+
+
+
+
+/* CSS para o layout do formulário */
+form {
+    margin: 0 auto; /* Centraliza o formulário na página */
+    max-width: 500px; /* Largura máxima do formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 200px;
+}
+
+/* Estilos para os campos do formulário */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px); /* Largura ajustada */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Ajuste do modelo de caixa */
+}
+
+/* Estilos para o botão de envio */
+button {
+    display: block; /* Torna o botão um bloco */
+    width: 100%; /* Largura total */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o botão de envio ao passar o mouse */
+button:hover {
+    background-color: #45a049; /* Cor de fundo alterada */
+}
+
+/* CSS para a mensagem de confirmação */
+#mensagem-confirmacao {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posicionamento fixo */
+    top: 50%; /* Posiciona a mensagem no meio verticalmente */
+    left: 50%; /* Posiciona a mensagem no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a mensagem */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 9999; /* Posicionamento sobre outros elementos */
+}
+
+h3 {
+    font-family: cursive
+    position: fixed
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra de texto */
+}
+
